@@ -1,5 +1,7 @@
 {
-  "scripts": {},
+  "scripts": {
+    "test": "./node_modules/.bin/protractor protractor.conf.js"    
+  },
   "devDependencies": {
     "jasmine-spec-reporter": "^3.2.0",
     "protractor": "^5.0.0"
