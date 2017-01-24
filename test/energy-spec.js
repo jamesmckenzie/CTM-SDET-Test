@@ -22,7 +22,6 @@ describe('Compare the Market Energy Journey', function () {
     
     describe('User has their bill handy and wants to compare Gas and Electricity', function () {
         it('should take the user to the Gas and Electricity "Your Energy" pages before returning results', function () {
-
             var yourSupplierDetails = {
                 postcode: 'PE2 6YS',
                 hasBillHandy: 'Yes, I have my bill',
@@ -65,8 +64,7 @@ describe('Compare the Market Energy Journey', function () {
     });
 
     describe('User does not have their bill handy but knows their current spend', function () {
-        it('should take the user to the "Your Energy" page before returning results', function () {
-
+        it('should take the user to the generic "Your Energy" page before returning results', function () {
             var yourSupplierDetails = {
                 postcode: 'PE2 6YS',
                 hasBillHandy: 'No, I don’t have my bill',
@@ -142,7 +140,6 @@ describe('Compare the Market Energy Journey', function () {
 
             expect(browser.getCurrentUrl()).toEqual(yourResultsPage.url);
             expect(yourResultsPage.resultsRows.count()).toBeGreaterThan(0);
-
         });        
     });    
 });
