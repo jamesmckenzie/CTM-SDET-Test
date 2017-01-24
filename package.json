@@ -1,8 +1,10 @@
 {
   "scripts": {
-    "test": "./node_modules/.bin/protractor protractor.conf.js"    
+    "test": "./node_modules/.bin/protractor protractor.conf.js"
   },
   "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-protractor-webdriver": "^0.2.5",
     "jasmine-spec-reporter": "^3.2.0",
     "protractor": "^5.0.0"
   }
